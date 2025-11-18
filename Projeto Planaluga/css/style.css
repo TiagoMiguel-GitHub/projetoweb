@@ -1,0 +1,91 @@
+/*---------------Google Fonts---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import 'menu.css';
+@import 'sliderhp.css';
+
+body{
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+
+  --main-color: #0077be;
+}
+
+p{
+    font-size: 1.4rem; 
+}
+h2{
+    font-size: 3.2rem; 
+}
+h3{
+    font-size: 2.4rem; 
+}
+
+.container-xm{
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-block: 10rem
+}
+h1{
+    text-align: center;
+}
+/* Header */
+header{
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90vw;
+    margin: 0 auto;
+}
+.logo{
+    width: auto;
+    max-height: 50px;
+}
+
+/* Body */
+.card-body{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-img{
+    border: 5px solid #0077be;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease, box-shadow 0.3s ease, opacity .3s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    will-change: transform;      
+    min-width: 25rem;
+}
+
+.card-img:hover{
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+.container-fluid{
+    color:#000 !important;
+}
+
+.color-text{ color:#757575 !important; }
+
+button {
+    font-size: calc(12px + (13 - 12) * ((100vw - 360px) / (1600 - 320))) !important;
+    background-color: #2CA6FB !important;
+    padding-left:  calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
+    padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
+    padding-top:  calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+    padding-bottom:   calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+button:focus { box-shadow: none !important; outline: none !important; }
+
+footer{ color:#caced1 !important; }
+
+li{ margin-top: 20px; margin-bottom: 20px; }
+
+.Careers{ cursor: pointer; color: #1E88E5; }
+
+.row-1{ background-color:#1E242A !important; }
+
+.row-2{ background-color: #28323C !important; }
