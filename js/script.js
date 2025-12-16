@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Portfolio Gallery with Popup Slider
-    if(document.querySelector('.portfolio').length > 0){
+    if(document.querySelector('.portfolio')){
         // Dados das imagens para cada serviço
         const serviceImages = {
             1: {
