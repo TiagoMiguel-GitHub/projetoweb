@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $form_submitted = true;
     
     if (empty($errors)) {
-        $to = 'tiagomiguel909@gmail.com';
+        $to = 'planaluga@gmail.com';
         $email_subject = '[Pedido Orçamento] ' . $old['subject'];
         
         $body = "Pedido de Orçamento\n\n";
