@@ -6,7 +6,6 @@
   height: 100vh;
   width: 100vw;
   transform: translate(100vw, 0);
-  /* ie workaround */
   -ms-transform: translatex(-100vw);
   box-sizing: border-box;
   pointer-events: none;
@@ -38,7 +37,6 @@
   white-space: nowrap;
   box-sizing: border-box;
   transform: translatex(100vw);
-  /* ie workaround */
   -ms-transform: translatex(-100vw);
 }
 .drawer-list li:last-child {

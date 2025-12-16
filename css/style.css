@@ -16,28 +16,13 @@ p{
     line-height: 1.6;
     margin-bottom: 0.8rem;
 }
-/*
-p{
-    font-size: 1.4rem; 
-}
 
-h2{
-    font-size: 3.2rem; 
-}
-h3{
-    font-size: 2.4rem; 
-}
-*/
 .container-xm{
     max-width: 90vw;
     margin: 0 auto;
     padding-block: 5rem
 }
-/*
-h1{
-    text-align: center;
-}
-    */
+
 /* Header */
 header{
   min-height: 6rem;
