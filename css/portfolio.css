@@ -1,13 +1,15 @@
-h1 {
-	font-family: 'Nunito', sans-serif;
-	font-size: 3rem;
-	font-weight: 250;
-	line-height: 1;
+.portfolio .body-wrapper{
+    margin: 1rem auto;
+    padding: 20px 0;
 }
 
-.portfolio .body-wrapper{
-    margin: 10rem auto;
+.portfolio .container h1 {
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 3rem !important;
+	font-weight: 250 !important;
+	line-height: 1 !important;
 }
+
 .gallery {    
     display: grid;
     max-width: 100%;
@@ -18,19 +20,175 @@ h1 {
 }
 
 .gallery-item {
+    position: relative;
     max-width: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: all .3s;
-}
-.gallery-item:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
-}
-.gallery-item img{
-    width: 100%;
-    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.mask p{
+.gallery-item:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    transform: scale(1.05);
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
     text-align: center;
+    transition: background 0.3s ease;
+}
+
+.gallery-item:hover .mask {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.mask p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Popup Modal */
+.popup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-modal.active {
+    display: flex;
+}
+
+.popup-content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+}
+
+.popup-modal .popup-close {
+    position: absolute !important;
+    top: -40px !important;
+    right: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-size: 60px !important;
+    font-weight: 300 !important;
+    cursor: pointer !important;
+    z-index: 10000 !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 60px !important;
+    height: 60px !important;
+    box-shadow: none !important;
+    outline: none !important;
+    display: block !important;
+}
+
+.popup-modal .popup-close:hover {
+    color: #ff4444 !important;
+    background: none !important;
+    background-color: transparent !important;
+}
+
+.popup-modal .popup-close:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: none !important;
+    color: white !important;
+    font-size: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    min-height: 60px;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.slider-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
+
+.slider-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.service-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }

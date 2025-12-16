@@ -71,12 +71,12 @@ include 'includes/header.php';
                     <div class="col">
                         <p>O que nos define na Planaluga, trabalhamos todos os dias para garantir: </p>
                         <ul>
-                            <li><sup>*</sup>Equipamentos seguros, verificados e prontos para uso</li>
-                            <li><sup>*</sup>Entregas e recolhas rápidas</li>
-                            <li><sup>*</sup>Apoio técnico qualificado</li>
-                            <li><sup>*</sup>Transparência em todas as etapas</li>
-                            <li><sup>*</sup>Flexibilidade nas opções de aluguer</li>
-                            <li><sup>*</sup>Relações de confiança com os nossos clientes</li>
+                            <li>Equipamentos seguros, verificados e prontos para uso</li>
+                            <li>Entregas e recolhas rápidas</li>
+                            <li>Apoio técnico qualificado</li>
+                            <li>Transparência em todas as etapas</li>
+                            <li>Flexibilidade nas opções de aluguer</li>
+                            <li>Relações de confiança com os nossos clientes</li>
                         </ul>
                         <p>Mais do que uma empresa de aluguer, somos um parceiro de trabalho, que compreende as exigências do setor e procura sempre estar à altura dos desafios de cada projeto.</p>
                         <p>Construímos hoje, pensando no futuro</p>
